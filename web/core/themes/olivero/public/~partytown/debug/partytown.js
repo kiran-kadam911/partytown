@@ -29,7 +29,7 @@ const arrayMethods = Object.freeze((obj => {
     function ready() {
         if (!isReady) {
             isReady = 1;
-            libPath = (config.lib || "/core/themes/olivero/~partytown/") + (false !== config.debug ? "debug/" : "");
+            libPath = (config.lib || "public/~partytown/") + (false !== config.debug ? "debug/" : "");
             if ("/" == libPath[0]) {
                 scripts = doc.querySelectorAll('script[type="text/partytown"]');
                 if (top != win) {

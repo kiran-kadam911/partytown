@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "partytown": "partytown copylib public/~partytown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kiran kadam",

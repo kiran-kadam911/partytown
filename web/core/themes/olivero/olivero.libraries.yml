@@ -62,10 +62,11 @@ global-styling:
 partytown:
   version: VERSION
   js:
-    /core/themes/olivero/~partytown/partytown.js: {}
-    js/partytown-setup.js: {}
+    partytown-setup.js: {}
+    public/~partytown/partytown.js: {}
   dependencies:
     - core/jquery
+    - core/drupalSettings
 
 slick-slider:
   css:
@@ -73,8 +74,32 @@ slick-slider:
       https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css: { type: external, minified: true }
       https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css: { type: external, minified: true }
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js: { type: external, minified: true, attributes: { defer: true, type: text/partytown } }
+    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js: { type: external, minified: true }
     js/slick-init.js: {}
+  dependencies:
+    - core/jquery
+
+third-party-script:
+  js:
+    https://requirejs.org/docs/release/2.1.5/comments/require.js: { 
+      type: external, 
+      minified: true, 
+      attributes: { 
+        type: 'text/partytown' 
+      }
+    }
+    https://cdn.jsdelivr.net/npm/google-analytics-js@0.1.2/gajs.min.js: { 
+      type: external, 
+      minified: true, 
+      attributes: { 
+        type: 'text/partytown' 
+      }
+    }
+    js/third-party-script.js: {
+      attributes: { 
+        type: 'text/partytown' 
+      }
+    }
   dependencies:
     - core/jquery
     - olivero/partytown

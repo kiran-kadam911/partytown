@@ -21,6 +21,7 @@ libraries:
   - olivero/global-styling
   - olivero/partytown
   - olivero/slick-slider
+  - olivero/third-party-script
 regions:
   header: Header
   primary_menu: Primary menu
