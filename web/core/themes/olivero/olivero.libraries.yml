@@ -62,7 +62,7 @@ global-styling:
 partytown:
   version: VERSION
   js:
-    partytown-setup.js: {}
+    js/partytown-setup.js: {}
     public/~partytown/partytown.js: {}
   dependencies:
     - core/jquery
@@ -74,7 +74,7 @@ slick-slider:
       https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css: { type: external, minified: true }
       https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css: { type: external, minified: true }
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js: { type: external, minified: true, attributes: { defer: true } }
     js/slick-init.js: {}
   dependencies:
     - core/jquery
